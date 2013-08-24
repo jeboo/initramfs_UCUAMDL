@@ -1081,10 +1081,10 @@ on property:init.svc.bootanim=stopped
     restorecon /data/media/obb
     start auditd
 
-service post-init /sbin/ext/post-init.sh
-    class core
-    user root
-    oneshot
+#service post-init /sbin/ext/post-init.sh
+#    class core
+#    user root
+#    oneshot
 
 # SISO-ANDR-PERF :: START Changing scheduler to cfq after boot complete
 on property:sys.boot_completed=1
